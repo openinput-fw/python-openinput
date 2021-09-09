@@ -1,0 +1,33 @@
+[build-system]
+build-backend = 'trampolim'
+requires = ['trampolim']
+
+[project]
+name = 'openinput'
+version = '0.0.0'
+description = 'Python library to interact with openinput devices'
+readme = 'README.md'
+requires-python = '>=3.7'
+license = { file = 'LICENSE' }
+keywords = ['openinput', 'input', 'HID']
+authors = [
+  { name = 'Filipe Laíns', email = 'lains@riseup.net' },
+]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Programming Language :: Python',
+]
+
+[project.optional-dependencies]
+test = [
+  'pytest',
+  'pytest-cov',
+]
+docs = [
+  'furo>=2021.04.11b34',
+  'sphinx~=3.0',
+]
+
+[project.urls]
+homepage = 'https://openinput.readthedocs.io'
+repository = 'https://github.com/openinput-fw/python-openinput'
